@@ -1,0 +1,69 @@
+1- Qual o valor de y no final do programa? 
+#include <stdio.h>
+main()
+{
+int y, *p, x;
+y = 0;
+p = &y;
+x = *p;
+x = 4;
+++(*p);
+x–;
+(*p) += x++;
+printf (“y = %d\n”, y);
+
+Resultado = 4 
+
+2-Teste e explique a diferença, caso exista, entre
+p++; (*p)++; *(++p);
+
+b) O que quer dizer *(p+10)?
+
+3-Quais serão os valores de x, y e p ao final do trecho de código
+abaixo?
+int x, y, *p;y = 0;
+p = &y;
+x = *p;
+x = 4;
+(*p)++;
+–x;
+(*p) += x;
+
+4-Os programas (trechos de código) abaixo possuem erros. Qual(is)?
+Como deveriam ser?
+a)
+void main() {
+int x, *p;
+x = 100;
+p = x;
+printf(“Valor de p: %d.\n”, *p);}
+b)
+void troca (int *i, int *j) {
+int *temp;
+*temp = *i;
+*i = *j;
+*j = *temp;}
+
+c)
+char *a, *b;
+a = “abacate”;
+b = “uva”;
+if (a < b)
+printf (“%s vem antes de %s no dicionário”, a, b);
+else
+printf (“%s vem depois de %s no dicionário”, a, b);
+
+5- Suponha que os elementos do vetor v são do tipo int e cada int
+ocupa 8 bytesno seu computador. Se o endereço de v[0] é 55000, qual o
+valor daexpressão v + 3?
+
+6- Escreva uma função mm que receba um vetor inteiro v[0..n-1] e os
+endereçosde duas variáveis inteiras, digamos min e max, e deposite nessas
+variáveis ovalor de um elemento mínimo e o valor de um elemento máximo do
+vetor.Escreva também uma função main que use a função mm.
+
+7- Suponha que v é um vetor. Descreva a diferença conceitual entre
+as expressões v[3] e v + 3.
+
+8- Escreva uma função chamada troca que troca os valores dos
+parâmetros recebidos. Sua assinatura deve ser:void troca(float *a, float *b);
